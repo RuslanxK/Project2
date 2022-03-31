@@ -1,0 +1,18 @@
+
+
+
+<mat-card class="todoDiv">
+
+    <mat-card-actions>
+        <button class="icon" style="display: flex; align-self: flex-end;" (click)="sendToParent()">&#10006;</button>
+    </mat-card-actions>
+
+    <mat-card-title>{{task.title}}</mat-card-title>
+    <mat-card-content>
+     Completed:<p [ngStyle]="{'color':completed == true ? 'red' : 'green' }">{{task.completed}} </p>
+    </mat-card-content>
+
+    <button *ngIf="completed" (click)="markCompleted()" class="btn btn-success">Mark Completed</button>
+
+
+</mat-card>

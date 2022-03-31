@@ -1,0 +1,36 @@
+<div class="usersDiv">
+
+    <div class="leftDiv">
+
+        <div class="container-sm col-7 m-5">
+
+            <button class="m-1" mat-mini-fab color="primary" (click)="addUser()" aria-label="Example icon button with a plus one icon">
+                <mat-icon>plus_one</mat-icon>
+            </button>
+
+            <form class="example-form">
+
+                <mat-form-field class="example-full-width" appearance="fill">
+
+                    <mat-label>Search</mat-label>
+                    <input #userData matInput placeholder="name/email" (keyup)="search(userData.value)">
+
+                </mat-form-field>
+
+            </form>
+
+        </div>
+
+
+        <app-user [userId]="user._id" *ngFor="let user of filteredData"></app-user>
+
+    </div>
+
+
+    <div class="rightDiv">
+
+        <router-outlet></router-outlet>
+
+    </div>
+
+</div>

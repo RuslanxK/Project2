@@ -1,0 +1,17 @@
+<div class="addTaskDiv" *ngIf="!hideTasks">
+
+    <form #f="ngForm" (ngSubmit)="submit(buttonType)">
+        <div class="mb-3">
+          <h1>Add Task</h1>
+
+          <label for="name" class="form-label">Title</label>
+          <input type="text" class="form-control" id="name" name="title" [(ngModel)]="task.title">
+        </div>
+
+        <button class="btn btn-primary m-1" type="submit" (click)="submit('addTask')">Add</button>
+        <button class="btn btn-warning m-1" type="submit" (click)="submit('back')">Back</button>
+
+        </form>
+        
+ </div>
+    

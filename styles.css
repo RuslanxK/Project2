@@ -1,0 +1,234 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.adduserDiv {
+  background-color: #f8f9fa;
+  width: 500px;
+  padding: 40px;
+  font-family: Montserrat;
+  font-weight: 400;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  animation: fadein 3s;
+}
+
+.icon {
+  background: none;
+  border: none;
+  font-size: large;
+}
+
+.icon:hover {
+  background: none;
+  font-size: large;
+  transition: 0.5s;
+  transform: rotate(80deg);
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.userDiv {
+  
+  background-color: #e9ecef;
+  width: 500px;
+  font-family: Montserrat;
+  font-weight: 400;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: 1px solid;
+  margin-bottom: 15px;
+}
+
+.markedDiv {
+  padding: 60px;
+  margin-top: -20px;
+}
+
+#buttonsDiv {
+  display: flex;
+  justify-content: end;
+}
+
+#otherData {
+  background-color: #e9ecef;
+  animation: fadein 2s;
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.usersDiv {
+  
+  width: 99vw;
+  display: flex;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.leftDiv {
+  display: flex;
+  flex-direction: column;
+  width: 49vw;
+  align-items: center;
+}
+
+.rightDiv {
+  margin-top: 200px;
+}
+
+.todosDiv {
+  background-color: #f8f9fa;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Montserrat;
+  font-weight: 400;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  animation: fadein 3s;
+  margin-bottom: 15px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.todoDiv {
+  background-color: #dee2e6;
+  width: 400px;
+  margin-bottom: 15px;
+  padding: 20px;
+  margin-top: 15px;
+  text-align: center;
+  font-family: Montserrat;
+  font-weight: 400;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: all 0.3s ease-out !important;
+}
+
+.content {
+  margin-top: 50px;
+}
+
+.marked {
+  font-size: large;
+  font-family: Montserrat;
+  font-weight: 600;
+  padding-right: 10px;
+}
+
+p {
+  font-size: large;
+  padding-top: 10px;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+  
+}
+
+mat-label {
+
+  color: black;
+}
+
+.plusOne {
+  margin: 10px;
+}
+
+.postsDiv {
+  background-color: #f8f9fa;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Montserrat;
+  font-weight: 400;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  animation: fadein 3s;
+  margin-bottom: 15px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.postDiv {
+  background: #dee2e6;
+  width: 400px;
+  margin-top: 15px;
+  font-family: Montserrat;
+  font-weight: 400;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  text-align: center;
+  transition: all 0.3s ease-out !important;
+}
+
+.postDiv:hover {
+  transform: translate(0, -5px) !important;
+}
+
+.todoDiv:hover {
+  transform: translate(0, -5px);
+}
+
+.content {
+  margin-top: 50px;
+}
+
+.marked {
+  font-size: large;
+  font-family: Montserrat;
+  font-weight: 600;
+  padding-right: 10px;
+}
+
+p {
+  font-size: large;
+  padding-top: 10px;
+}
+
+.addTaskDiv {
+  background-color: #f8f9fa;
+  width: 500px;
+  padding: 40px;
+  font-family: Montserrat;
+  font-weight: 400;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  animation: fadein 3s;
+}
+
+.addPostDiv {
+  background-color: #f8f9fa;
+  width: 500px;
+  padding: 40px;
+  font-family: Montserrat;
+  font-weight: 400;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  animation: fadein 3s;
+}
+
+button {
+  transition: all 2s ease-in-out;
+  font-size: 12px !important;
+}
+
+button:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}

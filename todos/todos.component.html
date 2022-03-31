@@ -1,0 +1,18 @@
+<div class="todosDiv" *ngIf="!hideTodos">
+
+    <div>
+        <h1>Tasks</h1>
+        <button class="btn btn-warning" (click)="addTask()">Add Task</button>
+    </div>
+
+    <app-todo [task]='task' (notify)="delete($event)" *ngFor="let task of user.tasks"></app-todo>
+
+</div> <br>
+
+<app-addtask *ngIf="hideTodos" (notify)="showTodos($event)"></app-addtask>
+
+<div> <br>
+
+    <app-posts></app-posts>
+
+</div>
